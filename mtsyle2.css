@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Copperplate, Copperplate Gothic Light, fantasy;
+}
+
+.navbar-brand {
+  font-size: 75px;
+}
+
+.nav-link {
+  font-size: 30px;
+  color: aliceblue !important;
+}
+
+.navbar {
+  max-width: 2500px;
+  margin: auto;
+}
+
+#mainNav {
+  background-color: transparent !important;
+}
+
+#mainNav.navbar-scrolled {
+  transition: all 1s ease;
+  background-color: rgb(191, 241, 144) !important;
+}
+
+#mainNav.navbar-scrolled .navbar-brand {
+  transition: all 1s ease-out;
+  display: none;
+}
+
+#mainNav.navbar-scrolled .navbar-nav {
+  transition: all 1s ease-out;
+}
+
+.masthead {
+  padding: 0;
+  max-width: 2500px;
+  margin: auto;
+}
+
+.owl-stage {
+  max-height: 930px;
+  overflow: hidden;
+}
+
+.prices {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.prices ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  flex-direction: column;
+}
+
+.prices li {
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.prices li:hover {
+  background-color: rgb(134, 192, 219);
+  transition: all 0.5s;
+}
+
+.image-and-price {
+  width: 600px;
+}
+
+#priceIMG {
+  display: block;
+  max-width: 500px;
+  max-height: 500px;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+#text,
+#price {
+  color: rgb(32, 71, 35);
+  text-align: center;
+  margin-top: 25px;
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+.footer {
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(32, 71, 35);
+}
+footer h3,
+p {
+  color: black;
+  margin: 0px;
+}
+
+footer p {
+  padding: 5px;
+}
+
+.callBtn {
+  font-size: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  background-color: rosybrown;
+  height: 100px;
+  width: 100px;
+  border-radius: 100pt;
+  text-align: center;
+  display: none;
+}
+
+#call {
+  color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-brand {
+    font-size: 35px;
+  }
+
+  .picture-border {
+    display: none;
+  }
+
+  .callBtn {
+    display: inline;
+  }
+}

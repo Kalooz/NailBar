@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Copperplate, Copperplate Gothic Light, fantasy;
+}
+
+nav {
+  background-color: rgb(32, 71, 35);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  justify-content: space-evenly;
+}
+
+.navbar-brand {
+  font-size: 75px;
+}
+
+.nav-link {
+  font-size: 30px;
+  color: aliceblue !important;
+}
+
+label.logo {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 80px;
+  margin-left: 25px;
+}
+.masthead {
+  padding: 0;
+  max-width: 2500px;
+  margin: auto;
+}
+
+.navbar {
+  max-width: 2500px;
+  margin: auto;
+}
+
+nav ul {
+  margin-right: 20px;
+  height: 80px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  float: right;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+nav img {
+  height: 35px;
+}
+
+.about img {
+  float: left;
+  height: auto;
+  width: 700px;
+  margin: 100px;
+  position: absolute;
+  left: 100px;
+  z-index: 1;
+}
+
+.picture-border {
+  position: absolute;
+  top: 150px;
+  left: 165px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  height: 500px;
+  width: 700px;
+}
+
+.about-section1 {
+  color: rgb(191, 241, 144);
+  margin: 70px;
+  margin-top: 100px;
+}
+
+.about-section {
+  margin: 100px;
+  margin-left: 850px;
+  margin-top: 0;
+  background-color: white;
+  font-size: 50px;
+}
+
+.about {
+  background-color: rgb(32, 71, 35);
+  max-width: 1920px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(32, 71, 35);
+}
+
+footer h3,
+p {
+  color: white;
+  margin: 0px;
+}
+
+footer p {
+  padding: 5px;
+}
+
+.mySlides {
+  display: block;
+  overflow: hidden;
+}
+
+.myslides img {
+  vertical-align: middle;
+  width: 960px;
+  height: 870px;
+  object-fit: cover;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 1920px;
+  height: 870px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.prices {
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.prices ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  flex-direction: column;
+}
+
+.prices li {
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.prices li:hover {
+  background-color: rgb(134, 192, 219);
+  transition: all 0.5s;
+}
+
+.image-and-price {
+  width: 600px;
+}
+
+#priceIMG {
+  display: block;
+  max-width: 500px;
+  max-height: 500px;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+#text,
+#price {
+  color: rgb(32, 71, 35);
+  text-align: center;
+  margin-top: 25px;
+  font-size: 45px;
+  margin-bottom: 25px;
+}
+
+#check {
+  display: none;
+}
+
+.checkbtn {
+  float: right;
+  color: white;
+  font-size: 50px;
+  line-height: 90px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+  order: 3;
+}
+
+.socialMediaLogo {
+  height: 35px;
+  width: 35px;
+  margin-top: 25px;
+}
+
+.callBtn {
+  text-align: right;
+  font-size: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 2;
+  background-color: rgb(154, 112, 194);
+  height: 100px;
+  width: 100px;
+  border-radius: 100pt;
+  text-align: center;
+  display: none;
+}
+
+.callBtn i {
+  margin-top: 25px;
+  color: aliceblue;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 600px) {
+  nav ul {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    top: 80px;
+    left: -100%;
+    transition: all 0.5s;
+    z-index: 1;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  nav ul li {
+    display: block;
+  }
+
+  nav ul li a {
+    font-size: 40px;
+    margin: 10px;
+    color: rgb(241, 144, 144);
+  }
+
+  nav ul li img {
+    display: none;
+  }
+
+  label.logo {
+    margin-left: 5px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  nav ul li a:active ~ ul {
+    left: -100%;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .prices ul li {
+    display: none;
+  }
+
+  .image-and-price {
+    display: none;
+  }
+
+  .about-section1 {
+    color: rgb(241, 144, 144);
+    margin: 15px;
+  }
+
+  .about-section {
+    background-color: silver;
+    font-size: 50px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: silver;
+  }
+
+  .about img {
+    margin: 0px;
+    left: 0px;
+    position: relative;
+  }
+
+  .picture-border {
+    display: none;
+  }
+
+  footer {
+    flex-direction: column;
+    height: auto;
+    justify-content: space-evenly;
+  }
+
+  .callBtn {
+    display: inherit;
+  }
+}
