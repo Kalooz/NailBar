@@ -131,20 +131,36 @@
     <div class="b-example-divider"></div>
 
     <div class="container-fluid bg-primary justify-content-center" id="about">
-      <div class="row justify-content-center">
-        <div
-          class="col-lg-6 my-5 mx-0 position-relative"
+      <div class="row position-relative justify-content-end">
+        <img
+          class="position-absolute"
+          src="resources\chairs.jpg"
+          alt=""
+          id="aboutphoto"
+          class="col-lg-6 col-lg-push-9 my-5 mx-0"
           data-aos="fade-right"
           data-aos-duration="3000"
+          style="
+            height: 100%;
+            width: 35%;
+            z-index: 5;
+            right: 48%;
+            margin-top: 50px;
+          "
+        />
+
+        <div
+          class="
+            col-lg-6
+            bg-white
+            justify-content-between
+            text-center
+            mt-4
+            align-self-end
+            mb-5
+          "
+          style="z-index: 1"
         >
-          <img
-            class="float-end"
-            src="resources\chairs.jpg"
-            alt=""
-            id="aboutphoto"
-          />
-        </div>
-        <div class="col-lg-6 bg-white text-center mt-4">
           <h1 class="about-section1">A NAIL SALON EXPERIENCE</h1>
           <p class="about-section1 lead">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
