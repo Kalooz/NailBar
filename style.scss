@@ -1,6 +1,6 @@
 $theme-colors: (
-  "primary": rgb(189, 189, 189),
-  "secondary": rgb(191, 241, 144),
+  "primary": rgba(131, 189, 117, 1),
+  "secondary": rgb(212, 212, 212),
 );
 
 $font-size-base: 1.35rem;
@@ -8,8 +8,9 @@ $font-size-base: 1.35rem;
 $font-family-sans-serif: "Varela", sans-serif;
 
 $list-group-active-color: white;
-$list-group-active-bg: #95d856;
+$list-group-active-bg: rgba(131, 189, 117, 1);
 $list-group-hover-bg: rgb(191, 241, 144);
+$list-group-hover-color: rgb(191, 241, 144);
 
 @import "node_modules\\bootstrap\\scss\\bootstrap";
 
@@ -31,9 +32,16 @@ $list-group-hover-bg: rgb(191, 241, 144);
 
 .list-group-item {
   border-radius: 5px;
-  border: 1px solid rgba(1, 1, 1, 1);
   margin-bottom: 5%;
   font-size: 35px;
+  color: #95d856;
+}
+
+.anchor {
+  display: block;
+  height: 80px; /*same height as header*/
+  margin-top: -80px; /*same height as header*/
+  visibility: hidden;
 }
 
 html {
@@ -45,15 +53,16 @@ body {
 
 .b-example-divider {
   height: 3rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: solid rgba(0, 0, 0, 0.15);
-  border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
-    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 
-.navbar {
-  margin: auto;
+.about-section1 {
+  padding-left: 10%;
+  margin-right: 10%;
+  color: #ffffff;
+}
+
+#about {
+  max-width: 2500px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -71,12 +80,27 @@ body {
   font-size: 10rem;
   text-align: center;
   z-index: 2;
+
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+#booknow {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  border-color: #ffffff;
+  border-style: double;
+  padding: 10px;
 }
 
 #mainNav {
@@ -92,17 +116,12 @@ body {
   transition: all 1s ease-in-out;
 }
 
-#nailpolish {
-  max-width: 500px;
-  max-height: 500px;
-  object-fit: fill;
-}
-
 .masthead {
   padding: 0;
   height: 100vh;
   margin: auto;
   position: relative;
+  box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1), 0 1em 1em rgba(0, 0, 0, 0.15);
 }
 
 .owl-stage {
@@ -124,11 +143,6 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-.footer-info {
-  color: rgb(149, 149, 149);
-  font-size: 1.75rem;
 }
 
 .socialMediaLogo {
