@@ -10972,6 +10972,21 @@ body {
   user-select: none;
 }
 
+.aitem {
+  margin-left: -5px;
+  margin-right: -5px;
+  margin-bottom: -5px;
+}
+
+.bitem {
+  margin-bottom: -5px;
+}
+
+.ditem {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
 #booknow {
   position: absolute;
   top: 70%;
@@ -11060,9 +11075,12 @@ body {
 .imgwrap {
   height: 500px;
   width: 100%;
-  border-radius: 5%;
   margin: auto;
   margin-top: 25px;
+}
+
+footer {
+  color: #ffffff;
 }
 
 @media (max-width: 576px) {
@@ -11095,6 +11113,14 @@ body {
   .list-group-item {
     margin-bottom: 1%;
     font-size: 18px;
+  }
+  .aitem {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .ditem {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
