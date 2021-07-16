@@ -27,13 +27,11 @@ $list-group-hover-color: rgb(191, 241, 144);
 .list-group-item:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  margin-top: 5%;
 }
 
 .list-group-item {
   border-radius: 5px;
-  margin-bottom: 5%;
-  font-size: 35px;
+  font-size: 1.5rem;
   color: #95d856;
 }
 
@@ -77,7 +75,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 10rem;
+  font-size: 4rem;
   text-align: center;
   z-index: 2;
 
@@ -87,21 +85,6 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-
-.aitem {
-  margin-left: -5px;
-  margin-right: -5px;
-  margin-bottom: -5px;
-}
-
-.bitem {
-  margin-bottom: -5px;
-}
-
-.ditem {
-  margin-left: -5px;
-  margin-right: -5px;
 }
 
 #booknow {
@@ -133,25 +116,25 @@ body {
 
 .masthead {
   padding: 0;
-  height: 100vh;
+  height: 70vh;
   margin: auto;
   position: relative;
   box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1), 0 1em 1em rgba(0, 0, 0, 0.15);
 }
 
 .owl-stage {
-  height: 100vh;
+  height: 70vh;
   overflow: hidden;
 }
 
 .owl-item {
-  height: 100vh !important;
+  height: 70vh !important;
 }
 
 .item img {
-  height: 100vh !important;
+  height: 70vh !important;
   width: 100vw !important;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 #priceIMG {
@@ -175,7 +158,7 @@ body {
   width: 100px;
   border-radius: 100pt;
   text-align: center;
-  display: none;
+  display: inline;
 }
 
 #call {
@@ -183,44 +166,62 @@ body {
   line-height: 2.2;
 }
 
-.imgwrap {
-  height: 500px;
-  width: 100%;
-  margin: auto;
-  margin-top: 25px;
-}
-
 footer {
   color: #ffffff;
 }
 
+.aitem {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: -5px;
+}
+
+.bitem {
+  margin-bottom: -5px;
+}
+
+.ditem {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+
 // Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) {
+@media (min-width: 576px) {
   .imgwrap {
     height: 230px;
     margin-bottom: 15px;
   }
+
+  .about-container {
+    max-width: 50%;
+  }
+}
+
+.about-container {
+  max-width: 80%;
 }
 
 // Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .list-group-item {
     margin-bottom: 1%;
+  }
+
+  .callBtn {
+    display: none;
+  }
+
+  .logo {
+    font-size: 10rem;
   }
 }
 
 // Large devices (desktops, 992px and up)
-@media (max-width: 992px) {
-  .logo {
-    font-size: 5rem;
-  }
-
+@media (min-width: 992px) {
   .picture-border {
     display: none;
-  }
-
-  .callBtn {
-    display: inline;
   }
 
   .imgwrap {
@@ -232,24 +233,57 @@ footer {
     margin-bottom: 1%;
     font-size: 18px;
   }
-  .aitem {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .bitem {
-  }
-
-  .ditem {
-    margin-left: 0;
-    margin-right: 0;
-  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
+  .about-container {
+    max-width: 90%;
+  }
+  .aitem {
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: -5px;
+    margin-top: 0;
+  }
+
+  .bitem {
+    margin-bottom: -5px;
+  }
+
+  .ditem {
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
-@media (max-width: 1400px) {
+@media (min-width: 1400px) {
+  .about-container {
+    max-width: 80%;
+  }
+
+  .imgwrap {
+    height: 400px;
+    margin-bottom: 15px;
+  }
+
+  .list-group-item {
+    margin-bottom: 1%;
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .about-container {
+    max-width: 65%;
+  }
+}
+
+@media (min-width: 3000px) {
+  .about-container {
+    max-width: 55%;
+  }
 }
