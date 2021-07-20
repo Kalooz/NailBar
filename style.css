@@ -11165,6 +11165,7 @@ body {
 #priceIMG {
   -o-object-fit: fill;
      object-fit: fill;
+  max-height: 60vh;
 }
 
 .socialMediaLogo {
