@@ -528,6 +528,14 @@ footer {
     margin-bottom: 1%;
     font-size: 2rem;
   }
+
+  #aboutphoto {
+    max-height: 79vh;
+  }
+
+  #partyphoto {
+    max-height: 79vh;
+  }
 }
 
 @media (min-width: 1900px) {
