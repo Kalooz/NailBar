@@ -12,7 +12,7 @@ $list-group-active-bg: rgba(131, 189, 117, 1);
 $list-group-hover-bg: rgb(191, 241, 144);
 $list-group-hover-color: rgb(191, 241, 144);
 
-@import "node_modules\\bootstrap\\scss\\bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap.scss";
 
 * {
   margin: 0;
@@ -57,7 +57,7 @@ body {
 
 #about-row {
   box-shadow: -1em 1em 1em rgba(0, 0, 0, 0.1), -1em 1em 1em rgba(0, 0, 0, 0.15);
-  max-height: 52vh;
+  max-height: 65vh;
 }
 
 .about-container {
@@ -72,12 +72,12 @@ body {
 
 .about-container .header {
   margin-bottom: 5%;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .about-container .desc {
   margin-bottom: 25%;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 #about {
@@ -128,7 +128,7 @@ body {
 
 #party-row {
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.1), 1em 1em 1em rgba(0, 0, 0, 0.15);
-  max-height: 52vh;
+  max-height: 65vh;
 }
 
 .party-container {
@@ -142,12 +142,12 @@ body {
 
 .party-container .header {
   margin-bottom: 5%;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .party-container .desc {
   margin-bottom: 25%;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 #party {
