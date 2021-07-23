@@ -180,7 +180,7 @@ body {
 .demo {
   padding-left: 8%;
   padding-right: 8%;
-  max-width: 2500px;
+  max-width: 100%;
 }
 
 .demo h3 {
@@ -189,6 +189,21 @@ body {
 
 .demo p {
   color: rgba(131, 189, 117, 1);
+}
+
+.palm-leaf-demo .right {
+  width: 10%;
+  bottom: -10%;
+  right: 5%;
+  transform: rotate(180deg);
+  display: none;
+}
+
+.palm-leaf-demo .left {
+  width: 10%;
+  left: 5%;
+  top: 5%;
+  display: none;
 }
 
 .aitem {
@@ -235,7 +250,6 @@ body {
   border: 15px;
   border-style: double;
   color: rgb(212, 212, 212);
-  max-height: 60vh;
 }
 
 #party-row {
@@ -497,6 +511,14 @@ footer {
     margin-bottom: 0;
     margin-top: 0;
   }
+
+  .palm-leaf-demo .right {
+    display: inline;
+  }
+
+  .palm-leaf-demo .left {
+    display: inline;
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
@@ -514,4 +536,7 @@ footer {
 }
 
 @media (min-width: 3000px) {
+  .demo {
+    max-width: 2500px;
+  }
 }

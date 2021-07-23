@@ -11314,7 +11314,7 @@ body {
 .demo {
   padding-left: 8%;
   padding-right: 8%;
-  max-width: 2500px;
+  max-width: 100%;
 }
 
 .demo h3,
@@ -11324,6 +11324,22 @@ body {
 
 .demo p {
   color: #83bd75;
+}
+
+.palm-leaf-demo .right {
+  width: 10%;
+  bottom: -10%;
+  right: 5%;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  display: none;
+}
+
+.palm-leaf-demo .left {
+  width: 10%;
+  left: 5%;
+  top: 5%;
+  display: none;
 }
 
 .aitem {
@@ -11372,7 +11388,6 @@ body {
   border: 15px;
   border-style: double;
   color: #d4d4d4;
-  max-height: 60vh;
 }
 
 #party-row {
@@ -11606,6 +11621,12 @@ footer {
     margin-bottom: 0;
     margin-top: 0;
   }
+  .palm-leaf-demo .right {
+    display: inline;
+  }
+  .palm-leaf-demo .left {
+    display: inline;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -11614,6 +11635,12 @@ footer {
   }
   #partyphoto {
     max-height: 79vh;
+  }
+}
+
+@media (min-width: 3000px) {
+  .demo {
+    max-width: 2500px;
   }
 }
 /*# sourceMappingURL=style.css.map */
