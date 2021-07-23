@@ -7,11 +7,6 @@ $font-size-base: 1.35rem;
 
 $font-family-sans-serif: "Varela", sans-serif;
 
-$list-group-active-color: white;
-$list-group-active-bg: rgba(131, 189, 117, 1);
-$list-group-hover-bg: rgb(191, 241, 144);
-$list-group-hover-color: rgb(191, 241, 144);
-
 @import "node_modules/bootstrap/scss/bootstrap.scss";
 
 * {
@@ -21,7 +16,7 @@ $list-group-hover-color: rgb(191, 241, 144);
 }
 
 .service {
-  font-size: 1.75rem;
+  font-size: 1rem;
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
@@ -35,9 +30,11 @@ $list-group-hover-color: rgb(191, 241, 144);
 
 .service:hover {
   background-color: #95d856;
+  color: #ffffff;
 }
 
 .active {
+  color: #ffffff;
   background-color: #a1bf85;
 }
 
@@ -57,7 +54,6 @@ body {
 
 #about-row {
   box-shadow: -1em 1em 1em rgba(0, 0, 0, 0.1), -1em 1em 1em rgba(0, 0, 0, 0.15);
-  max-height: 65vh;
 }
 
 .about-container {
@@ -88,8 +84,6 @@ body {
   width: 100%;
   max-height: 300px;
   z-index: 5;
-  right: 30%;
-  top: 24%;
 }
 
 .imgprop {
@@ -128,7 +122,6 @@ body {
 
 #party-row {
   box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.1), 1em 1em 1em rgba(0, 0, 0, 0.15);
-  max-height: 65vh;
 }
 
 .party-container {
@@ -158,8 +151,6 @@ body {
   width: 100%;
   max-height: 300px;
   z-index: 5;
-  right: 38%;
-  top: 18%;
 }
 
 .partyprop {
@@ -278,6 +269,9 @@ body {
 
 #priceIMG {
   object-fit: fill;
+  border: 15px;
+  border-style: double;
+  color: rgb(212, 212, 212);
   max-height: 60vh;
 }
 
@@ -286,8 +280,14 @@ body {
   margin-bottom: 12%;
 }
 
+.demo {
+  padding-left: 8%;
+  padding-right: 8%;
+  max-width: 2500px;
+}
+
 .demo h3 {
-  color: #65b053;
+  color: rgb(103, 151, 91);
 }
 
 .demo p {
@@ -345,12 +345,12 @@ footer {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .list-group-item {
-    margin-bottom: 1%;
-  }
-
   .mobilenav {
     display: none;
+  }
+
+  .service {
+    font-size: 1.5rem;
   }
 
   #booknow {
@@ -362,19 +362,19 @@ footer {
   }
 
   .about-container .header {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .about-container .desc {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .party-container .header {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .party-container .desc {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   #mainNav.navbar-scrolled {
@@ -397,10 +397,6 @@ footer {
     font-size: 9rem;
   }
 
-  .list-group-item {
-    margin-bottom: 1%;
-    font-size: 18px;
-  }
   #aboutphoto {
     position: absolute;
     width: 35%;
@@ -422,7 +418,6 @@ footer {
   }
 
   .demo {
-    max-width: 43%;
     margin-bottom: 4%;
     margin-top: 25px;
   }
@@ -432,17 +427,9 @@ footer {
     margin-top: 25px;
   }
 
-  .about-section {
-    font-size: 2.5rem;
-  }
-
   .party-container {
     margin-bottom: 4%;
     margin-top: 25px;
-  }
-
-  .party-section {
-    font-size: 2.5rem;
   }
 
   .palm-leaf-about {
@@ -465,11 +452,11 @@ footer {
   }
 
   .about-container .header {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 
   .about-container .desc {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .party-container {
@@ -477,20 +464,16 @@ footer {
   }
 
   .party-container .header {
-    font-size: 3rem;
+    font-size: 2.4rem;
   }
 
   .party-container .desc {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 }
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .demo {
-    max-width: 90%;
-  }
-
   #about-row {
     margin-left: 20%;
   }
@@ -520,15 +503,6 @@ footer {
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-  .demo {
-    max-width: 80%;
-  }
-
-  .list-group-item {
-    margin-bottom: 1%;
-    font-size: 2rem;
-  }
-
   #aboutphoto {
     max-height: 79vh;
   }
@@ -539,29 +513,7 @@ footer {
 }
 
 @media (min-width: 1900px) {
-  .demo {
-    max-width: 65%;
-  }
-
-  .about-container .header {
-    font-size: 4.5rem;
-  }
-
-  .about-container .desc {
-    font-size: 2.5rem;
-  }
-
-  .party-container .header {
-    font-size: 4.5rem;
-  }
-
-  .party-container .desc {
-    font-size: 2.5rem;
-  }
 }
 
 @media (min-width: 3000px) {
-  .demo {
-    max-width: 70%;
-  }
 }
