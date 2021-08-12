@@ -8748,12 +8748,6 @@ body {
   margin-top: 0.8rem;
 }
 
-#facebooknav {
-  font-size: 0;
-  line-height: 0;
-  color: transparent;
-}
-
 .palm-leaf-demo .right {
   width: 10%;
   bottom: -10%;
@@ -8788,16 +8782,13 @@ body {
 }
 
 .service {
-  font-size: 1rem;
   text-align: center;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 2%;
   padding-bottom: 2%;
-  margin-bottom: 2.5%;
   border-radius: 50px;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-bottom: 1%;
 }
 
 .service:hover {
@@ -8814,8 +8805,21 @@ body {
   -o-object-fit: fill;
      object-fit: fill;
   border: 15px;
+  height: 50%;
   border-style: double;
   color: #d4d4d4;
+}
+
+#prices {
+  margin-top: 12%;
+}
+
+#description {
+  display: none;
+}
+
+#price {
+  font-size: 2em;
 }
 
 #party-row {
@@ -8960,6 +8964,18 @@ footer {
   .picture-border {
     display: none;
   }
+  #priceIMG {
+    height: 100%;
+  }
+  #prices {
+    margin-top: 0;
+  }
+  #description {
+    display: block;
+  }
+  #price {
+    font-size: 1.5em;
+  }
   .logo {
     font-size: 9rem;
   }
@@ -8975,7 +8991,6 @@ footer {
   #partyphoto {
     position: absolute;
     width: 35%;
-    height: 55%;
     max-height: none;
     z-index: 5;
     left: 32%;

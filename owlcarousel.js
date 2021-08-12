@@ -1,6 +1,5 @@
 (function ($) {
-  "use strict"; // Start of use strict
-
+  "use strict";
   $(".owl-carousel").owlCarousel({
     loop: true,
     nav: false,
@@ -22,4 +21,4 @@
       },
     },
   });
-})(jQuery); // End of use strict
+})(jQuery);
